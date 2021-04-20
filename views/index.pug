@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title Hrishabh Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome To Hrishabh's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#MissionSection 
+        h3 Our Mission
+        div.card
+            h4 Dance perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+
+                    div.card-content
+                        p This is the best dance academy of the universe. 
+        div.card
+            h4 Dance The Way You like
+            div.card-img
+                    img(src="/static/3.png")
+
+                    div.card-content
+                        p This is the best dance academy of the universe.  
+        div.card
+            h4 Expert Teaching
+            div.card-img
+                    img(src="/static/2.png")
+
+                    div.card-content
+                        p This is the best dance academy of the universe.   
+
+    section#sponsorsSection 
+        h3 Our sponsors
+        div#sponsors
+            img(src="/static/s1.png", alt="sponsor image", class="spimage") 
+            img(src="/static/s2.png", alt="sponsor image", class="spimage") 
+            img(src="/static/s3.png", alt="sponsor image", class="spimage") 
+
+    footer#footer 
+        | copyright  2021 hrishdanceacademy.com | All rights reserved
+    script
+      include ../static/index.js
+
+    
